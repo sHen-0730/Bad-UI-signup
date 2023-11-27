@@ -19,6 +19,9 @@ githubのCodespacesの使い方を再確認
 タイマー機能の組み込み方法(ページが変わっても継続させる)
 - 疑問点など
 
+## 変更の同期ができない場合のコマンド
+    git pull --rebase origin main
+
 # Nuxt 3 Minimal Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
