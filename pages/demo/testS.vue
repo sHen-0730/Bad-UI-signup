@@ -9,9 +9,6 @@
       <NavLink>Link</NavLink>
     </NavItem>
     <NavItem>
-      <NavLink>Link</NavLink>
-    </NavItem>
-    <NavItem>
       <NavLink disabled>
         Disabled
       </NavLink>
