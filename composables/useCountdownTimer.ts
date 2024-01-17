@@ -1,4 +1,3 @@
-// composables/useCountdownTimer.ts
 import { ref, watch, computed } from "vue";
 
 // 残り時間をカウントダウンする関数
