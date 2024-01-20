@@ -1,9 +1,10 @@
 <template>
-  <Container>
-  <Row>
-    <Col>
-      <img class="w-50" src="@/assets/Logo.jpg">
-    </Col>
-  </Row>
-</Container>
+  <div>
+    <div>
+      <h2>UIの悪さを体験しよう！</h2>
+    </div>
+    <div>
+      <nuxt-link to="/SignUpPage">→</nuxt-link>
+    </div>
+  </div>
 </template>
