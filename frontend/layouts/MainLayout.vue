@@ -11,10 +11,10 @@
       :value="75"
     />
   </Progress>
+  <slot />
       </Col>
       <Col class="mt-4" col="md-2" offset="md-1">
         <CountdownButton />
-        <slot />
       </col>
     </Row>
   </Container>

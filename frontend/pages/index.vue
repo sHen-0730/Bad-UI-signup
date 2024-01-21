@@ -5,6 +5,7 @@
     </div>
     <div>
       <nuxt-link to="/SignUpPage">→</nuxt-link>
+      <nuxt-link to="/CAPTCHAPage"> 確認用リンク</nuxt-link>  
     </div>
   </div>
 </template>

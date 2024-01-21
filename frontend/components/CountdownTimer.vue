@@ -1,6 +1,6 @@
 <template>
   <div class="countdown-timer">
-    <p>{{ minutes }}:{{ displaySeconds }}</p>
+    <p class="fs-1">{{ minutes }}:{{ displaySeconds }}</p>
   </div>
 </template>
 
