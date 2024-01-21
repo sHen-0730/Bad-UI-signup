@@ -1,8 +1,8 @@
 <template>
 <div style="background-color: #06C38B; height: 100vh;">
   <Container>
-    <Row justify-content="evenly">
-      <Col class="mt-5" col="8">
+    <Row justify-content="between">
+      <Col class="mt-5" col="8" offset="md-1">
       <Progress>
     <ProgressBar
       striped
@@ -12,7 +12,8 @@
     />
   </Progress>
       </Col>
-      <Col class="mt-5" col="4">
+      <Col class="mt-4" col="md-2" offset="md-1">
+        <CountdownButton />
         <slot />
       </col>
     </Row>
