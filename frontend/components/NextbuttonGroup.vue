@@ -6,6 +6,7 @@
   height: 130px;
   background-color:white;"
   >
+  <div class="pt-5">
   <Row>
     <Col>
     <b-button
@@ -18,11 +19,15 @@
     <Col>
   <b-button
     button="success"
+    toggle="popover"
+    placement="left"
+    content="次に進むボタンは左のボタンです"
     class="px-4"
   >
    Help
   </b-button>
   </Col>
   </Row>
+</div>
   </b-div>
   </template>
