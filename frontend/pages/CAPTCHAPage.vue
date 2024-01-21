@@ -30,9 +30,13 @@
     </CarouselInner>
   </Carousel>
 </Col>
+<Col>
+<label for="number">数字を入力してください</label>
+<input id="number" type="number" />
+</Col>
   </Row>
 </template>
 
-<script setup>
+<script setup lang="ts">
 definePageMeta({ layout: "main-layout" })
 </script>
