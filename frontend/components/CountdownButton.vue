@@ -2,6 +2,7 @@
 <div>
   <p class="text-center" style="color: #FFE455;">制限時間を確認する</p>
   <b-button 
+    class="mb-5"
     button="light"
     toggle="modal"
     target="#staticBackdropLive"

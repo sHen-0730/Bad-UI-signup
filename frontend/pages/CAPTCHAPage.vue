@@ -1,6 +1,8 @@
 <template>
-  <Row>
-  <Col col="10" offset="md-1">
+  <Row justify-content="center">
+  <p class="pt-3 text-center fw-bold">画面に表示されている数字を入力してください。<br>
+これは、あなたが人間であることを確認するためのものです。</p>
+  <Col col="9" class="mt-3">
   <Carousel 
    dark
    control
@@ -9,19 +11,19 @@
     <CarouselInner>
       <CarouselItem  interval="0">
         <CarouselItemImage
-          width="400"
+          width="200"
           src="https://source.unsplash.com/random/1920x1080?sig=1"
         />
       </CarouselItem>
       <CarouselItem interval="1">
         <CarouselItemImage
-          width="400"
+          width="200"
           src="https://source.unsplash.com/random/1920x1080?sig=2"
         />
       </CarouselItem>
       <CarouselItem interval="1">
         <CarouselItemImage
-          width="400"
+          width="200"
           src="https://source.unsplash.com/random/1920x1080?sig=3"
         />
       </CarouselItem>
