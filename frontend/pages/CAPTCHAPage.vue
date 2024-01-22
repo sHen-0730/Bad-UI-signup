@@ -59,7 +59,7 @@ const validate = async () => {
   // 入力された数字が正しいかどうかを判定する
   if (result.value.isValid) {
     // 正しい場合はLastPage.vueに遷移する
-    navigateTo('/ResultPage')
+    navigateTo('/')
   }
 };
 </script>
