@@ -6,6 +6,13 @@ export default defineNuxtConfig({
     'usebootstrap',
     'nuxt-icon'
 ],
+
+  server: {
+    serverMiddleware: [
+      { path: '/api', handler: '~/backend/ValidateNumberController.cs' }
+    ]
+  },
+
 css: [
     "bootstrap/scss/bootstrap.scss",
     "@/assets/style/reset.css"
