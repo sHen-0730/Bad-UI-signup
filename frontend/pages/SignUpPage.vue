@@ -19,15 +19,24 @@
         <BFormText padding="b-3" v-for="rule in rules" :style="style">{{
           rule.text
         }}</BFormText>
+                  <NextbuttonGroup :is-valid="isValid.value" @next="onNext" />
       </BForm>
     </Col>
   </Row>
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref,watchEffect } from "vue";
 const username = ref("");
 const password = ref("");
+import { useRouter } from "vue-router";
+import { validatePassword } from "../composables/validatePassword";
+const router = useRouter();
+const isValid = ref(false);
+
+watchEffect(() => {
+  isValid.value = validatePassword(username.value, password.value);
+});
 
 const rules = ([
   { text: "パスワードは12文字以上である必要があります" },
@@ -50,9 +59,15 @@ const showRules = () => {
   style.value.display = "block";
 };
 
-definePageMeta({
-  layout: "main-layout",
-});
+const onNext = () => {
+  //パスワードが正しい場合
+  if (isValid.value) {
+    router.push("/CAPTCHAPage");
+  } else {
+    //パスワードが間違っている場合
+    alert("パスワードのルールが間違っています");
+  }
+};
 
 definePageMeta({ layout: "main-layout" })
 </script>
