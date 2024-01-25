@@ -1,5 +1,3 @@
-import { ref } from "vue";
-
 //パスワードの検証関数
 export const validatePassword = (username: string, password: string) => {
   //パスワードが12文字以上かどうか

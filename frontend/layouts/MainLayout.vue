@@ -27,7 +27,7 @@
           <Col col="7" offset="md-5" class="mb-5">
             <CountdownButton />
           </Col>
-          <NextbuttonGroup v-model="isValid" @next="onNext" />
+          <NextbuttonGroup :is-valid="isValid.value" @next="onNext" />
         </Col>
       </Row>
     </Container>
@@ -35,14 +35,21 @@
 </template>
 
 <script setup lang="ts">
-import { useStore } from "vuex"; //Vuexストアをインポート
+import { ref, watchEffect } from "vue";
+import { useRouter } from "vue-router";
+import { validatePassword } from "../composables/validatePassword";
 
 const router = useRouter();
-const store = useStore();
-const isValid = computed(() => store.state.isValid); //VuexストアからisValidの値を取得する
+
+const username = ref("");
+const password = ref("");
+const isValid = ref(false);
+
+watchEffect(() => {
+  isValid.value = validatePassword(username.value, password.value);
+});
 
 const onNext = () => {
-  //パスワードが正しい場合
   //パスワードが正しい場合
   if (isValid.value) {
     router.push("/CAPTCHAPage");
