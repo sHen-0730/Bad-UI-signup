@@ -19,7 +19,7 @@
         <BFormText padding="b-3" v-for="rule in rules" :style="style">{{
           rule.text
         }}</BFormText>
-                  <NextbuttonGroup :is-valid="isValid.value" @next="onNext" />
+        <NextbuttonGroup :is-valid="isValid" @next="onNext" />
       </BForm>
     </Col>
   </Row>
@@ -60,11 +60,9 @@ const showRules = () => {
 };
 
 const onNext = () => {
-  //パスワードが正しい場合
   if (isValid.value) {
     router.push("/CAPTCHAPage");
   } else {
-    //パスワードが間違っている場合
     alert("パスワードのルールが間違っています");
   }
 };
