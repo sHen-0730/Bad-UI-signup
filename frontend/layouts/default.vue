@@ -1,6 +1,6 @@
 <template>
 <div style="background-color: #06C38B; height: 100vh;">
-<Container>
+<Container class="pt-5">
 <Row justify-content="evenly">
 <Col class="mt-5" col="6">
 <img src="@/assets/logo.jpg" class="img-thumbnail" >
