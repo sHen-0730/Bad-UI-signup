@@ -1,6 +1,6 @@
 <template>
-  <div style="background-color: #06C38B; height: 100vh;">
-    <Container class="pt-5">
+  <div style="background-color: #06C38B; height:100vh;">
+    <Container padding="t-5">
       <Row justify-content="between">
         <Col class="mt-5" col="8" offset="md-1">
           <Progress>
@@ -27,6 +27,7 @@
           <Col col="7" offset="md-5" class="mb-5">
             <CountdownButton />
           </Col>
+          <SupportButtonGroup />
         </Col>
       </Row>
     </Container>
