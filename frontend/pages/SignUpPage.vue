@@ -16,6 +16,7 @@
             v-on:blur="showRules"
           />
         </BFormControl>
+        <b-p padding="b-4" text-color="danger" v-if="alert">パスワードのルールが間違っています。</b-p>
         <BFormText padding="b-3" v-for="rule in rules" :style="style">{{
           rule.text
         }}</BFormText>
@@ -27,12 +28,14 @@
 
 <script setup lang="ts">
 import { ref,watchEffect } from "vue";
-const username = ref("");
-const password = ref("");
 import { useRouter } from "vue-router";
 import { validatePassword } from "../composables/validatePassword";
+
+const username = ref("");
+const password = ref("");
 const router = useRouter();
 const isValid = ref(false);
+const alert = ref(false);
 
 watchEffect(() => {
   isValid.value = validatePassword(username.value, password.value);
@@ -62,9 +65,9 @@ const showRules = () => {
 const onNext = () => {
   if (isValid.value) {
     router.push("/CAPTCHAPage");
-  } else {
-    alert("パスワードのルールが間違っています");
-  }
+  } else if(!alert.value){
+    alert.value = !alert.value;
+    }
 };
 
 definePageMeta({ layout: "main-layout" })
