@@ -2,11 +2,12 @@
   <b-div rounded margin="t-5" style="
       height: 480px;
       background-color:seagreen;">
-    <b-button button="primary" toggle="modal" target="#exampleModalCenter">
+    <b-button button="primary" toggle="modal" target="#exampleModalCenter" >
       Hint
     </b-button>
     <Modal 
     id="exampleModalCenter"
+    margin="t-5"
     backdrop="static">
       <ModalDialog centered>
         <ModalContent>

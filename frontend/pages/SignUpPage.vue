@@ -17,9 +17,7 @@
           />
         </BFormControl>
         <b-p padding="b-4" text-color="danger" v-if="alert">パスワードのルールが間違っています。</b-p>
-        <BFormText padding="b-3" v-for="rule in rules" :style="style">{{
-          rule.text
-        }}</BFormText>
+        <BFormText padding="b-3" v-for="rule in rules" :style="style">{{rule.text}}</BFormText>
         <NextbuttonGroup :is-valid="isValid" @next="onNext" />
       </BForm>
     </Col>
