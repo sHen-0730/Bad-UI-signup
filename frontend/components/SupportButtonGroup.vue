@@ -1,8 +1,15 @@
 <template>
-  <b-div rounded margin="t-5" style="
+  <b-div rounded margin="t-5" position="relative" style="
       height: 480px;
-      background-color:seagreen;">
-    <b-button button="primary" toggle="modal" target="#exampleModalCenter" >
+      background-color:#f5f5dc;">
+      <b-div rounded="top" position="absolute"
+      style="
+      width: 100%;
+      height: 60px;
+      background-color:#66cdaa;">
+      <b-p margin="t-3" padding="s-3" position="absolute" text-color="light">あなたをサポートします</b-p>
+    <b-div margin="t-5" style="text-align: center;">
+    <b-button padding="x-5" margin="t-5" button="success" toggle="modal" target="#exampleModalCenter" >
       Hint
     </b-button>
     <Modal 
@@ -21,6 +28,7 @@
         </ModalContent>
       </ModalDialog>
     </Modal>
-
+      </b-div>
+    </b-div>
   </b-div>
 </template>
