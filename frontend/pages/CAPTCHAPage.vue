@@ -43,16 +43,17 @@
 
 <script setup lang="ts">
 definePageMeta({ layout: "main-layout" })
-import {useRouter} from "vue-router";
+import { useRouter } from "vue-router";
+
 const router = useRouter();
 const number = ref(0);
 const result = ref(false); 
-const complete = ref(false);
+const complete = useState("complete", () => false);
 
 const checkNumber = () => { 
   if (number.value === 121) {
     complete.value = true; 
-    router.push({name: "ResultPage", params: {complete: String(complete.value)}});
+    router.push("/ResultPage");
   } 
   else{
     result.value = true;

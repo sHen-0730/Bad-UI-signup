@@ -4,7 +4,7 @@
       <h2 class="fs-1 py-5 text-md-start lh-1 text-white">サインアップできました！<br />
                                                           おめでとうございます！</h2>
     </div>
-    <div>
+    <div v-else>
       <h2 class="fs-1 py-5 text-md-start lh-1 text-white">制限時間がなくなりました</h2>
     </div>
     <div>
@@ -15,6 +15,7 @@
     <div class="mt-5" style="text-align: center;">
     <nuxt-link to="/"> <b-button
     button="success"
+    @click="reset"
     size="lg"
     padding="3"
     >
@@ -23,3 +24,11 @@
     </div>
    </div>
 </template>
+
+<script setup lang="ts">
+const complete = useState("complete")
+
+const reset = () => {
+  complete.value = false;
+}
+</script>
