@@ -15,7 +15,6 @@
         <nuxt-link to="/SignUpPage" class="link-offset-2 link-underline link-underline-opacity-0 text-white">→</nuxt-link></p>
     </Col>
       <Col col="3">
-      <!-- imgタグに@click="rotate"を追加する -->
       <img src="@/assets/arrow.png" @click="rotate">
       </Col>
   </Row>
