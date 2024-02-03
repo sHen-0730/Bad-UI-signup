@@ -12,19 +12,19 @@
       <CarouselItem  interval="0">
         <CarouselItemImage
           width="200"
-          src="https://source.unsplash.com/random/1920x1080?sig=1"
+          src="@/assets/CAPTCHA1.jpg"
         />
       </CarouselItem>
       <CarouselItem interval="1">
         <CarouselItemImage
           width="200"
-          src="https://source.unsplash.com/random/1920x1080?sig=2"
+          src="@/assets/CAPTCHA1.jpg"
         />
       </CarouselItem>
       <CarouselItem interval="1">
         <CarouselItemImage
           width="200"
-          src="https://source.unsplash.com/random/1920x1080?sig=3"
+          src="@/assets/CAPTCHA1.jpg"
         />
       </CarouselItem>
     </CarouselInner>
