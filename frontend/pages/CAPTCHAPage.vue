@@ -18,13 +18,13 @@
       <CarouselItem interval="1">
         <CarouselItemImage
           width="200"
-          src="@/assets/CAPTCHA1.jpg"
+          src="@/assets/CAPTCHA2.jpg"
         />
       </CarouselItem>
       <CarouselItem interval="1">
         <CarouselItemImage
           width="200"
-          src="@/assets/CAPTCHA1.jpg"
+          src="@/assets/CAPTCHA3.jpg"
         />
       </CarouselItem>
     </CarouselInner>
