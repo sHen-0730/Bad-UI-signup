@@ -1,7 +1,7 @@
 <template>
   <div class="px-5">
     <div>
-      <h2 class="fs-1 py-5 text-md-start lh-1 text-white">UIの悪さを体験してしよう！</h2>
+      <h2 class="fs-1 py-5 text-md-start lh-1 text-white">UIの悪さを体験してみよう！</h2>
     </div>
     <div>
       <p class="fs-4 lh-lg text-white">
