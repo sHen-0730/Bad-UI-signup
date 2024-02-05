@@ -33,7 +33,7 @@
 <b-div margin="y-3" style="text-align: center;">
 <b-label padding="e-3">数字を入力してください</b-label>
 <input type="number" v-model="number" />
-<b-p margin="t-3" text-color="danger" v-if="result">数字が間違っています</b-p>
+<b-p margin="t-3" text-color="danger" v-if="result">数字が3つ隠されています。その数字の合計を入力して下さい。</b-p>
 <Col col="6" offset="md-3">
 <NextbuttonGroup @next="checkNumber" />
 </Col>
