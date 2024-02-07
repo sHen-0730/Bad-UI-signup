@@ -7,5 +7,5 @@
 <script setup lang="ts">
 import { useCountdownTimer } from "~/composables/useCountdownTimer";
 
-const { minutes, displaySeconds, stopTimer } = useCountdownTimer(180, this);
+const { minutes, displaySeconds, stopTimer } = useCountdownTimer(120, this);
 </script>
